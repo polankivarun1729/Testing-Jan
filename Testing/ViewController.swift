@@ -9,15 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+var n = name()
+    
+    @IBOutlet weak var lbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        n.str = "asdas"
+        
+        
+        
+        
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func nw()->Bool{
+        
+       
+        return (n.str?.count)!>5
+        
+        
+        
+        
     }
 
 
